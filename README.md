@@ -1,4 +1,4 @@
-# online_shop
+# online_store
 Online store of computer equipment
 
 Course work of 5th semester
