@@ -1,6 +1,5 @@
 # online_store
 Online store of computer equipment
 
-Course work of 5th semester
-
+TRITPO 5th semester project
 [Program code](https://github.com/SachkoAlex/online_shop/tree/master/src/main/java/com/bsuir/trtpo/backend)
