@@ -1,4 +1,4 @@
-# online_store
+# quick_store
 Online store of computer equipment<br>
 TRITPO 5th semester project<br>
 
