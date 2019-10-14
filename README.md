@@ -1,5 +1,4 @@
 # quick_store
-Online store of computer equipment<br>
-TRITPO 5th semester project<br>
+Интернет-магазин компьютерной техники<br>
 
-[Program code](https://github.com/SachkoAlex/online_shop/tree/master/src/main/java/com/bsuir/trtpo/backend)
+[Код программы](https://github.com/SachkoAlex/online_shop/tree/master/src/main/java/com/bsuir/trtpo/backend)
