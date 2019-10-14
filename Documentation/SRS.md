@@ -28,27 +28,27 @@
 
 - Главная страница
 
-[Главная страница](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/Main.jpg)
+![Главная страница](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/Main.jpg)
 
 - Оформления заказа
 
-[Окно оформления заказа](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/Order.jpg)
+![Окно оформления заказа](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/Order.jpg)
 
 - Детальной информации о продукте
 
-[Окно детальной информации о продукте](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/ProductInfo.jpg)
+![Окно детальной информации о продукте](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/ProductInfo.jpg)
 
 - Список всех товаров
 
-[Список всех товаров](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/ProductsList.jpg)
+![Список всех товаров](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/ProductsList.jpg)
 
 - Регистрация
 
-[Регистрация](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/SignUp.jpg)
+![Регистрация](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/SignUp.jpg)
 
 - Вход в аккаунт
 
-[Вход в аккаунт](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/LogIn.jpg)
+![Вход в аккаунт](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/LogIn.jpg)
 
 #### 2.3 Интерфейс пользователя<a name="2.3"></a>
 Целевая аудитория проекта:
