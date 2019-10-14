@@ -34,13 +34,13 @@
 
 ![Окно оформления заказа](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/Order.jpg)
 
-- Детальной информации о продукте
+- Просмотр детальной информации о продукте
 
 ![Окно детальной информации о продукте](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/ProductInfo.jpg)
 
-- Список всех товаров
+- Список всех продуктов
 
-![Список всех товаров](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/ProductsList.jpg)
+![Список всех продуктов](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Mockups/ProductsList.jpg)
 
 - Регистрация
 
