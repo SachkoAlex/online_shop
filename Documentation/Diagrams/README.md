@@ -8,13 +8,21 @@
 1.2.4 [Просмотр детальной информации о продукте](#1.2.4)<br>
 1.2.5 [Создание заказа](#1.2.5)<br>
 2. [Диаграммы активности](#2)<br>
-2.1 [Регистрация](#2.1)<br>
+2.1 [Регистрация нового пользователя](#2.1)<br>
 2.2 [Вход в систему](#2.2)<br>
 2.3 [Просмотр всех товаров](#2.3)<br>
 2.4 [Просмотр детальной информации о товаре](#2.4)<br>
 2.5 [Добавление товара в корзину](#2.5)<br>
 2.6 [Создание заказа](#2.6)<br>
 3. [Диаграмма последовательности](#3)<br>
+4. [Диаграммы состояний](#4)<br>
+4.1 [Регистрация нового пользователя](#4.1)<br>
+4.2 [Вход в систему](#4.2)<br>
+4.3 [Добавление товара в корзину](#4.3)<br>
+4.4 [Просмотр детальной информации о товаре](#4.4)<br>
+4.5 [Оформление заказа](#4.5)<br>
+5. [Диаграмма классов](#5)<br>
+6. [Диаграмма компонентов и развертывания](#6)<br>
 
 ### 1. Диаграмма прецедентов<a name="1"></a>
 Диаграмма прецедентов представляет собой следующую диаграмму:
@@ -93,7 +101,7 @@
 7. Приложение создает заказ с выбранными продуктами и введенными данными.
 8. Конец.
 ### 2. Диаграммы активности<a name="2"></a>
-##### 2.1 Регистрация<a name="2.1"></a> 
+##### 2.1 Регистрация нового пользователя<a name="2.1"></a> 
 При заполнении форм данных происходит их валидация. При неверных данных выводится сообщение об ошибке с требованием повторить действие, иначе происходит регистрация нового пользователя и переход на главную страницу.
 
 ![Registration activity](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/Activity/SignUp.jpg)
@@ -122,3 +130,30 @@
 Диаграмма последовательности основных вариантов использования представлена ниже:
 
 ![Sequence Diagram](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/Sequence/Sequence.jpg)
+
+### 4. Диаграммы состояний<a name="4"></a>
+##### 4.1 Регистрация нового пользователя<a name="4.1"></a> 
+
+![Registration Diagram](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/State/Registration.jpg)
+##### 4.2 Вход в систему<a name="4.2"></a> 
+
+![LogIn Diagram](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/State/LogIn.jpg)
+##### 4.3 Добавление товара в корзину<a name="4.3"></a> 
+
+![AddingToCart Diagram](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/State/AddingToCart.jpg)
+##### 4.4 Просмотр детальной информации о товаре<a name="4.4"></a> 
+
+![DetailedInfo Diagram](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/State/DetailedInfo.jpg)
+##### 4.5 Оформление заказа<a name="4.5"></a> 
+
+![Ordering Diagram](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/State/Ordering.jpg)
+
+### 5. Диаграмма классов<a name="5"></a>
+На этой диаграмме представлены основные сущности, которые будут реализованы в системе, а также отношения между ними.
+
+![Class Diagram](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/Class/Class.jpg)
+
+### 6. Диаграмма компонентов и развертывания<a name="6"></a>
+Диаграмма компонентов совмещена с диаграммой развертывания и представлена ниже.
+
+![Deployment Diagram](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/Deployment/Deployment.jpg)
