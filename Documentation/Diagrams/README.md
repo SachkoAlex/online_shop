@@ -149,7 +149,7 @@
 ![Ordering Diagram](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/State/Ordering.jpg)
 
 ### 5. Диаграмма классов<a name="5"></a>
-На этой диаграмме представлены основные сущности, которые будут реализованы в системе, а также отношения между ними.
+На этой диаграмме представлены основные классы, которые будут реализованы в системе, а также отношения между ними.
 
 ![Class Diagram](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/Class/Class.jpg)
 
