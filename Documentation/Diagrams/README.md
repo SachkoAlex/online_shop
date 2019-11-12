@@ -140,7 +140,7 @@
 ![LogIn Diagram](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/State/LogIn.jpg)
 ##### 4.3 Добавление товара в корзину<a name="4.3"></a> 
 
-![AddingToCart Diagram](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/State/AddingToCart.jpg)
+![AddingToCart Diagram](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/State/AddingT%D0%9ECart.jpg)
 ##### 4.4 Просмотр детальной информации о товаре<a name="4.4"></a> 
 
 ![DetailedInfo Diagram](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/Diagrams/State/DetailedInfo.jpg)
