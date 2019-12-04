@@ -1,15 +1,12 @@
 package com.bsuir.trtpo.backend.service.serviceImpl;
 
 import com.bsuir.trtpo.backend.entity.User;
-import com.bsuir.trtpo.backend.entity.Wallet;
 import com.bsuir.trtpo.backend.repository.UserRepository;
 import com.bsuir.trtpo.backend.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 @Service
