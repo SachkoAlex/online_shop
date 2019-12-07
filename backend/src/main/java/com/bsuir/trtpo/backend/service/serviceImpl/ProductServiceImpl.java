@@ -18,21 +18,62 @@ public class ProductServiceImpl implements ProductService {
         this.productRepository = productRepository;
     }
 
-    public Optional<Product> getProductByName(String name) {
-        return productRepository.findProductByName(name);
-    }
 
     @Override
     public List<Product> findProducts(String query, String sort, String order) {
-        List<Product> allProducts = new ArrayList<>(productRepository.findAllByPriceIsNotNullAndAmountIsGreaterThan(0));
+        List<Product> allProducts = new ArrayList<>(productRepository.findAllByPriceIsNotNullAndQuantityIsGreaterThan(0));
         List<Product> validProducts = findProducts(query, allProducts);
         validProducts = sortProducts(createComparatorForSort(sort,order),validProducts);
         return validProducts;
     }
 
     @Override
+    public List<Product> findProductsByName(String name)
+    {
+        return productRepository.findAllByName(name);
+    }
+
+    @Override
+    public List<Product> findAllProducts()
+    {
+        return productRepository.findAll();
+    }
+
+    @Override
+    public List<Product> getLastViewed(List<Integer> ids) {
+        List<Product> products = new ArrayList<>();
+        ids.forEach(id -> {
+            products.add(productRepository.findProductById(id));
+        });
+        return products;
+    }
+
+    @Override
     public List<Product> findProducts(String query, List<Product> validProducts) {
-        return null;
+        Objects.requireNonNull(validProducts, "Collection should not be null");
+        if (query != null && !query.trim().isEmpty()) {
+            String[] queries = query.toLowerCase().split(" ");
+
+            Map<Product, Integer> map = new HashMap<>();
+            validProducts.forEach(product -> {
+                Integer number = 0;
+                for (String q : queries) {
+                    if (product.getDescription().toLowerCase().contains(q)) {
+                        number++;
+                    }
+                }
+
+                if (number > 0) {
+                    map.put(product, number);
+                }
+            });
+
+            return map.entrySet().stream()
+                    .sorted(Map.Entry.<Product, Integer>comparingByValue().reversed())
+                    .map(Map.Entry::getKey).collect(Collectors.toList());
+        } else {
+            return validProducts;
+        }
     }
 
     @Override

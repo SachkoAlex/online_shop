@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/api/products")
 public class ProductController {
 
     private ProductService productService;
@@ -21,7 +21,7 @@ public class ProductController {
         this.productService = productService;
     }
 
-    @RequestMapping(value = "", method = RequestMethod.POST)
+    @RequestMapping(value = "", method = RequestMethod.GET)
     public List<Product> getProducts(@RequestParam(name = "query", required = false) String query,
                                     @RequestParam(name = "sort", required = false) String sort,
                                     @RequestParam(name = "order", required = false) String order) {
@@ -29,8 +29,20 @@ public class ProductController {
         return productService.findProducts(query, sort, order);
     }
 
+
+    @RequestMapping(value = "/name", method = RequestMethod.GET)
+    public List<Product> getProductsByName(@RequestParam(name = "name")String name)
+    {
+        return productService.findProductsByName(name);
+    }
+
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public Product getProductById(@PathVariable(name = "id") Integer id) {
         return productService.getProductById(id);
+    }
+
+    @PostMapping(value = "/last-viewed")
+    public List<Product> getLastViewed(@RequestBody List<Integer> ids) {
+        return productService.getLastViewed(ids);
     }
 }

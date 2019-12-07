@@ -11,6 +11,5 @@
 
     <modules>
         <module>backend</module>
-        <module>security</module>
     </modules>
 </project>

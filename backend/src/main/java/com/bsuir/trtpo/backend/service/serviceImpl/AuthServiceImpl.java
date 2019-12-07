@@ -37,7 +37,7 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public UserTokenModel login(User user) {
         try {
-            Optional<User> temp = userService.getUserByEmail(user.getEmail());
+            Optional<User> temp = userService.getUserByUsername(user.getUsername());
             String token = getToken(user);
             return new UserTokenModel(temp.get(), new AuthToken(token));
         } catch (AuthenticationException ex){
@@ -53,7 +53,7 @@ public class AuthServiceImpl implements AuthService {
     }
 
     private String getToken(User user) {
-        UserDetails userDetails = userDetailsService.loadUserByUsername(user.getEmail());
+        UserDetails userDetails = userDetailsService.loadUserByUsername(user.getUsername());
 
         UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
                 userDetails, user.getPassword(), userDetails.getAuthorities()

@@ -32,6 +32,7 @@ public class Order {
     private String address;
 
     @OneToMany
+    @JoinColumn(name = "order_id")
     private List<Cart> cartItems;
 
 }

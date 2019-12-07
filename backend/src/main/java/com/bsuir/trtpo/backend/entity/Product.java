@@ -27,8 +27,8 @@ public class Product {
     @Column(name  = "quantity")
     private Integer quantity;
 
-    @Column(name = "amount")
-    private Integer amount;
+    @Column(name = "image_url")
+    private String imageUrl;
 
     @Override
     public boolean equals(Object o) {
@@ -38,12 +38,12 @@ public class Product {
         return id == product.id &&
                 Objects.equals(name, product.name) &&
                 Objects.equals(price, product.price) &&
-                Objects.equals(amount, product.amount);
+                Objects.equals(quantity, product.quantity);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, price, amount);
+        return Objects.hash(id, name, price, quantity);
     }
 
     @Override
@@ -52,7 +52,7 @@ public class Product {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", price=" + price +
-                ", amount=" + amount +
+                ", amount=" + quantity +
                 '}';
     }
 }

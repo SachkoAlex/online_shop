@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User saveUser(User user) {
-        Optional<User> temp = userRepository.findUserByEmail(user.getEmail());
+        Optional<User> temp = userRepository.findUserByUsername(user.getUsername());
         if (user.getId() != null || !temp.isPresent()) {
             user.setPassword(encoder.encode(user.getPassword()));
             return userRepository.save(user);
@@ -38,8 +38,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Optional<User> getUserByEmail(String email) {
-        return userRepository.findUserByEmail(email);
+    public Optional<User> getUserByUsername(String username) {
+        return userRepository.findUserByUsername(username);
     }
 
     @Override
