@@ -1,0 +1,25 @@
+<div class="edit-user">
+  <h2>Авторизация</h2>
+
+  <form [formGroup]="userForm">
+    <mat-form-field>
+      <input matInput placeholder="Логин" [formControlName]="'username'" required>
+      <mat-error *ngIf="username.invalid">{{getErrorText('username')}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Пароль" [formControlName]="'password'" [type]="hide ? 'password' : 'text'" required>
+      <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      <mat-error *ngIf="password.invalid">{{getErrorText('password')}}</mat-error>
+    </mat-form-field>
+  </form>
+
+  <mat-error *ngIf="!success">Неправильное имя или пароль</mat-error>
+
+  <div class="edit-user-controls">
+    <button mat-flat-button color="primary" [disabled]="username.invalid || password.invalid " (click)="onLoginClick()">
+      Войти
+    </button>
+    <button class="button-interval" mat-flat-button color="warn" (click)=onCancelClick()>Отмена</button>
+  </div>
+</div>
