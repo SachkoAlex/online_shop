@@ -1,6 +1,5 @@
 # quick_store
-Интернет-магазин компьютерной техники
-
+Интернет-магазин компьютерной техники<br>
 # Требования
 Для сборки и запуска приложения вам необходимо:
 1. [JDK 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
