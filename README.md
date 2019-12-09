@@ -11,7 +11,7 @@
   1.1 [SRS](https://github.com/SachkoAlex/quick_store/blob/master/Documentation/SRS.md) <br>
   1.2 [Диаграммы](https://github.com/SachkoAlex/quick_store/tree/master/Documentation/Diagrams) <br>
 2. Код программы<br>
-  2.1 [backend](https://github.com/SachkoAlex/quick_store/tree/master/backend)<br>
-  2.2 [frontend](https://github.com/SachkoAlex/quick_store/tree/master/frontend)<br>
+  2.1 [backend](https://github.com/SachkoAlex/quick_store/tree/master/backend) <br>
+  2.2 [frontend](https://github.com/SachkoAlex/quick_store/tree/master/frontend) <br>
 3.[Test Plan](https://github.com/SachkoAlex/quick_store/blob/master/Testing/TestsPlan.md) <br>
 4.[Test Results](https://github.com/SachkoAlex/quick_store/blob/master/Testing/TestsResults.md) <br>
