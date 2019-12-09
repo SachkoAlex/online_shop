@@ -106,7 +106,7 @@
 
 ## Представление результатов
 
-Результаты представлены  в документе ["Результаты тестирования"](https://github.com/s1ovak/PhoneShop/blob/master/Testing/TestResults.md).
+Результаты представлены  в документе ["Результаты тестирования"](https://github.com/SachkoAlex/quick_store/blob/master/Testing/TestsResults.md).
 
 <a name="conclusion"/>
 
